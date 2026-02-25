@@ -1,0 +1,56 @@
+# ── Build ──────────────────────────────────────────────
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+
+# ── Visual Studio ───────────────────────────────────────
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# ── NuGet ───────────────────────────────────────────────
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ── Publish ─────────────────────────────────────────────
+**/publish/
+**/PublishProfiles/
+
+# ── Entity Framework ────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+
+# ── Segredos e variáveis de ambiente ────────────────────
+appsettings.Development.json
+appsettings.Local.json
+*.env
+.env
+secrets.json
+
+# ── Sistema operacional ─────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── MAUI / Android / iOS ────────────────────────────────
+**/android/
+**/ios/
+**/.idea/
+
+# ── Cobertura de testes ─────────────────────────────────
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
