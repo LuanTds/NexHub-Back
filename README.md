@@ -41,13 +41,16 @@ O **NexHub** é uma plataforma que conecta jogadores, integrando dados de desemp
 ## 🏗️ Arquitetura
 
 ```
-NexHub/
-├── NexHub.Domain/          # Entidades e interfaces
-├── NexHub.Application/     # Casos de uso e serviços
-├── NexHub.Infrastructure/  # EF Core, clients de API externas
-├── NexHub.API/             # Controllers, SignalR Hub, middlewares
-├── NexHub.Web/             # Blazor WebAssembly (frontend)
-└── NexHub.Desktop/         # .NET MAUI + Blazor Hybrid
+NexHub-Back/
+├── src/
+│   ├── Modules/
+│   │   └── User/
+│   │       ├── Application/     # Casos de uso e serviços
+│   │       ├── Domain/          # Entidades e interfaces
+│   │       └── Infrastructure/  # EF Core, repositórios
+│   └── Web/
+│       └── WebBff/              # API principal (ASP.NET Core)
+└── NexHub.slnx                  # Solution file
 ```
 
 ---
@@ -63,13 +66,13 @@ NexHub/
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/nexhub.git
-cd nexhub
+git clone https://github.com/LuanTds/NexHub-Back.git
+cd NexHub-Back
 ```
 
 ### 2. Configure as variáveis de ambiente
 
-Crie um arquivo `appsettings.Development.json` em `NexHub.API/`:
+Crie um arquivo `appsettings.Development.json` em `src/Web/WebBff/`:
 
 ```json
 {
@@ -95,14 +98,14 @@ Crie um arquivo `appsettings.Development.json` em `NexHub.API/`:
 ### 3. Rode as migrations
 
 ```bash
-cd NexHub.API
+cd src/Web/WebBff
 dotnet ef database update
 ```
 
 ### 4. Inicie a API
 
 ```bash
-dotnet run --project NexHub.API
+dotnet run --project src/Web/WebBff
 ```
 
 A API estará disponível em `https://localhost:5001` com Swagger em `/swagger`.
@@ -150,6 +153,17 @@ O `.exe` gerado estará em `bin/Release/net8.0-windows/publish/`. Veja os releas
 - [ ] Redis + RabbitMQ
 - [ ] CI/CD com GitHub Actions
 - [ ] Integração com Steam
+
+---
+
+## 🤝 Como contribuir
+
+1. Pegue uma issue no board do Jira
+2. Crie uma branch: `git checkout -b feature/nome-da-tarefa`
+3. Faça o commit: `git commit -m "feat: descrição"`
+4. Abra um PR para a branch `develop`
+
+> Nenhuma tarefa tem responsável fixo — pegue a que quiser!
 
 ---
 
