@@ -3,7 +3,7 @@
   <Folder Name="/src/Modules/" />
   <Folder Name="/src/Modules/User/">
     <Project Path="src/Modules/User/Application/Application.csproj" Id="2c8f0b23-6370-4209-88ce-6b29e7ad87ba" />
-    <Project Path="src/Modules/User/Domain/Domain/Domain.csproj" Id="3d68ab85-4fb9-4ddf-a8c5-9e2b347b8ae3" />
+    <Project Path="src/Modules/User/Domain/Domain.csproj" Id="ad3a1d70-2897-455b-884c-0a95e27ef385" />
     <Project Path="src/Modules/User/Infrastructure/Infrastructure.csproj" Id="009ab0a0-130f-4661-8fc0-33cdd18f168f" />
   </Folder>
   <Folder Name="/src/Web/">
