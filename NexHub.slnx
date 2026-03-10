@@ -1,10 +1,14 @@
 <Solution>
   <Folder Name="/src/" />
+  <Folder Name="/src/Core/">
+    <Project Path="src/Core/Core.Domain/Core.Domain.csproj" Id="758d6506-4e65-4120-ae27-72f0344bc5e0" />
+  </Folder>
   <Folder Name="/src/Modules/" />
   <Folder Name="/src/Modules/User/">
-    <Project Path="src/Modules/User/Application/Application.csproj" Id="2c8f0b23-6370-4209-88ce-6b29e7ad87ba" />
-    <Project Path="src/Modules/User/Domain/Domain.csproj" Id="ad3a1d70-2897-455b-884c-0a95e27ef385" />
-    <Project Path="src/Modules/User/Infrastructure/Infrastructure.csproj" Id="009ab0a0-130f-4661-8fc0-33cdd18f168f" />
+    <Project Path="src/Modules/User/User.Application/User.Application.csproj" Id="44328f55-b652-45e4-99bb-48f8b9615b12" />
+    <Project Path="src/Modules/User/User.Domain/User.Domain.csproj" Id="0ff4deab-0ed9-4c37-bfde-3db284f1e5b9" />
+    <Project Path="src/Modules/User/User.Infrastructure/User.Infrastructure.csproj" Id="a1a7df10-c824-439d-b074-078d96356bf1" />
+    <Project Path="src/Modules/User/User.Persistence/User.Persistence.csproj" Id="ebca1a70-ea41-404e-bf6a-2bcdfc782549" />
   </Folder>
   <Folder Name="/src/Web/">
     <Project Path="src/Web/WebBff/WebBff.csproj" Id="bcfdcc9f-8acb-4dc9-a782-fceb08493de6" />
